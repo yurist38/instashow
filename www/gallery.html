@@ -1,0 +1,53 @@
+<ion-header-bar class="bar-stable">
+    <div class="buttons">
+        <a href="#/" class="button button-icon icon ion-arrow-left-c"></a>
+    </div>
+    <h1 class="title">#{{settings.tag}}</h1>
+    <div class="buttons">
+        <button class="button button-icon icon ion-loop" ng-click="getFresh()"></button>
+    </div>
+</ion-header-bar>
+<ion-content class="gallery-content">
+    <div class="row row-main">
+        <div class="photo col col-big">
+            <img src="{{ instaData[0].images.standard_resolution.url }}" />
+            <div class="author">
+                <img class="avatar" src="{{ instaData[0].user.profile_picture }}"/>
+                <span class="name">
+                    @{{ instaData[0].user.username }}
+                </span>
+            </div>
+        </div>
+        <div class="photo col col-small">
+            <div class="row">
+                <img src="{{ instaData[1].images.standard_resolution.url }}" />
+                <div class="author">
+                    <img class="avatar" src="{{ instaData[1].user.profile_picture }}"/>
+                    <span class="name">
+                        @{{ instaData[1].user.username }}
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="photo col col-50 col-smallest">
+                    <img src="{{ instaData[2].images.standard_resolution.url }}" />
+                    <div class="author">
+                        <img class="avatar" src="{{ instaData[2].user.profile_picture }}"/>
+                        <span class="name">
+                            @{{ instaData[2].user.username }}
+                        </span>
+                    </div>
+                </div>
+                <div class="photo col col-50 col-smallest">
+                    <img src="{{ instaData[3].images.standard_resolution.url }}" />
+                    <div class="author">
+                        <img class="avatar" src="{{ instaData[3].user.profile_picture }}"/>
+                        <span class="name">
+                            @{{ instaData[3].user.username }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

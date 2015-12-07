@@ -1,0 +1,90 @@
+/* Empty. Add your own CSS if you like */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.gallery-content {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 44px;
+}
+
+.scroll-content > .scroll {
+  height: 100%;
+  position: relative;
+}
+
+.row-main {
+    position: relative;
+    margin: 0 auto;
+}
+
+.photo {
+    position: relative;
+    display: block;
+}
+
+.photo .author {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.photo .author .avatar {
+    display: block;
+    width: 10%;
+    height: auto;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 10px 5px 0;
+    float: right;
+}
+
+.photo .author .name {
+    text-shadow: 0 0 2px #000;
+    color: #fff;
+    font-size: 0.6rem;
+    display: block;
+    position: relative;
+    clear: both;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.col-big {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 59.84%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 59.84%;
+    -ms-flex: 0 0 59.84%;
+    flex: 0 0 59.84%;
+    max-width: 59.84%;
+    height: 100%;
+    position: relative;
+}
+
+.col-small {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 40.16%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 40.16%;
+    -ms-flex: 0 0 40.16%;
+    flex: 0 0 40.16%;
+    max-width: 40.16%;
+}
+
+.col, .row {
+    padding: 0;
+    position: relative;
+}

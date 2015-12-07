@@ -1,0 +1,22 @@
+<ion-header-bar class="bar-stable">
+    <h1 class="title">InstaShow</h1>
+</ion-header-bar>
+<ion-content>
+  <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Access Token</span>
+        <input type="text" placeholder="Access Token" ng-model="settings.token">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Хэш-тег (без '#')</span>
+        <input type="text" placeholder="майпатииззебест" ng-model="settings.tag">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Период обновления (сек)</span>
+        <input type="text" value="30" placeholder="30" ng-model="settings.updatePeriod">
+      </label>
+  </div>
+  <a href="#/gallery" class="button button-full button-balanced" ng-click="saveSettings()">
+      Жги!
+  </a>
+</ion-content>
